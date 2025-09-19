@@ -1,0 +1,17 @@
+# don’t send local junk to the build context
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+
+# local/editor/git stuff
+.git/
+.vscode/
+
+# big or generated folders (we’ll bind-mount at runtime)
+data/
+reports/
+notebooks/
