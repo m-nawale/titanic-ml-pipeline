@@ -93,5 +93,8 @@ _Notes:_ GB captures non-linearities/interactions (e.g., Sex×Pclass, age effect
 - **Limitations:** Small historic dataset; features reflect social/contextual factors; not suitable for real-world decision making.  
 - **Fairness:** Model learns associations in historic data (e.g., sex/class) → handle responsibly; predictions are illustrative.
 
+## LightGBM (baseline config)
 
-
+- 5-fold CV accuracy: 0.8193 ± 0.0298
+- Fold scores: [0.8603, 0.8258, 0.7697, 0.8090, 0.8315]
+- Notes: With default-ish settings and one-hot inputs, LGBM underperforms our Gradient Boosting (~0.8440). For this small tabular dataset, our GB with isotonic calibration remains the champion.
